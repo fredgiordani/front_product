@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 import Navbar from './components/navbar';
 import ProductList from './components/productlist';
 import AddProduct from './components/addProduct';
-import HelloWorld from './components/helloWorld';
-
+import AddProductForm from './components/addProductForm';
+import ShowOneProduct from './components/showOneProduct';
 
 function App() {
  
@@ -13,9 +13,11 @@ function App() {
     <Router>
       <div>
         <Navbar />
-        <ProductList />
         <Routes>
-        <Route path="/hello-world" element={<HelloWorld />} />
+        <Route path="/product-list" element={<ProductList />} />
+        <Route path="/addProductForm" element={<AddProductForm />} />
+        <Route path="/addProductForm" element={<AddProductForm />} />
+        <Route path="/showOneProduct/:id" element={<ShowOneProduct />} />
         </Routes>
       </div>
     </Router>
