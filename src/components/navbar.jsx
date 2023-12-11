@@ -1,8 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-  const [showAddProduct, setShowAddProduct] = useState(false);
 
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">

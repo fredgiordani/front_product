@@ -1,9 +1,8 @@
-import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
-import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import React from 'react';
 
 import Navbar from './components/navbar';
 import ProductList from './components/productlist';
-import AddProduct from './components/addProduct';
 import AddProductForm from './components/addProductForm';
 import ShowOneProduct from './components/showOneProduct';
 
